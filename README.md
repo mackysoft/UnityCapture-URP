@@ -1,4 +1,4 @@
-# Unity Capture
+# Unity Capture for Universal Render Pipeline
 
 ![Unity Capture and OBS](https://raw.githubusercontent.com/schellingb/UnityCapture/master/README.png)
 
