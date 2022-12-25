@@ -1,0 +1,8 @@
+{
+	"name": "com.mackysoft.unitycapture",
+	"displayName": "UnityCapture for Universal Render Pipeline",
+	"version": "1.0.0",
+	"unity": "2022.1",
+	"description": "Streams Unity (Universal Render Pipeline) rendered output to other Windows applications as virtual capture device.",
+	"keywords": [ "Camera", "Video" ]
+}
