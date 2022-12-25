@@ -98,14 +98,14 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: UnityCapture.unitypackage
-          path: ./Build/UnityCapture.unitypackage
+          path: ./Unity/Build/UnityCapture.unitypackage
 
   create-release:
     needs: [update-packagejson, build]
     runs-on: ubuntu-latest
     steps:
       # Create Releases
-      - uses: actions/create-release@v3
+      - uses: actions/create-release@v2
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,7 +120,7 @@ jobs:
       - uses: actions/download-artifact@v3
       
       # Upload to Releases(unitypackage)
-      - uses: actions/upload-release-asset@v3
+      - uses: actions/upload-release-asset@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
