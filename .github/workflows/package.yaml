@@ -30,6 +30,7 @@ jobs:
       - name: Build .unitypackage
         uses: game-ci/unity-builder@v2
         with:
+          projectPath: Unity
           unityVersion: 2022.1.23f1
           buildMethod: MackySoft.PackageTools.Editor.UnityPackageExporter.Export
 
