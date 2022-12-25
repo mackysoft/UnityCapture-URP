@@ -14,7 +14,7 @@ jobs:
   update-packagejson:
     runs-on: ubuntu-latest
     env:
-      TARGET_FILE: ./Assets/MackySoft/MackySoft.UnityCapture/package.json
+      TARGET_FILE: .Unity/Assets/MackySoft/MackySoft.UnityCapture/package.json
     outputs:
       sha: ${{ steps.commit.outputs.sha }}
     steps:
