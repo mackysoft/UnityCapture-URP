@@ -78,7 +78,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets[matrix.license] }}
         with:
-          projectPath: .
+          projectPath: Unity
           unityVersion: ${{ matrix.unityVersion }}
           targetPlatform: StandaloneLinux64
           buildMethod: MackySoft.PackageTools.Editor.UnityPackageExporter.Export
