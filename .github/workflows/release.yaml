@@ -105,7 +105,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Create Releases
-      - uses: actions/create-release@v1
+      - uses: actions/create-release@v3
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,7 +120,7 @@ jobs:
       - uses: actions/download-artifact@v3
       
       # Upload to Releases(unitypackage)
-      - uses: actions/upload-release-asset@v1
+      - uses: actions/upload-release-asset@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
