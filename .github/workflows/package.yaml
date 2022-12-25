@@ -14,13 +14,13 @@ jobs:
     steps:
       # Checkout
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           lfs: true
 
       # Cache
       - name: Cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: Library
           key: Library
@@ -35,7 +35,7 @@ jobs:
 
       # Upload
       - name: Upload .unitypackage
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Unity Package
           path: Build
