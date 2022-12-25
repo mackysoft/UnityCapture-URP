@@ -95,7 +95,7 @@ jobs:
         working-directory: .
 
       # Store artifacts.
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v2
         with:
           name: UnityCapture.unitypackage
           path: ./Unity/Build/UnityCapture.unitypackage
@@ -117,7 +117,7 @@ jobs:
           prerelease: false
 
       # Download(All) Artifacts to current directory
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@v2
       
       # Upload to Releases(unitypackage)
       - uses: actions/upload-release-asset@v1
