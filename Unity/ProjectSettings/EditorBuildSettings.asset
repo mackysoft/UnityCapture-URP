@@ -6,5 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/UnityCam/Example/CubesScene.unity
-    guid: 91da01314302a514aa3176f8a4ad8536
+    path: Assets/Scene.unity
+    guid: 1d58251fb8d7d6e4e8828a8ed3b89a66
+  m_configObjects: {}
