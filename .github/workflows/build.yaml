@@ -38,3 +38,4 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE_2022 }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
+          projectPath: Unity
